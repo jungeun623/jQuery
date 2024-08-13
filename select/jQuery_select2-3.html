@@ -16,7 +16,6 @@
     <ul id="menu2">
       <li>내용2-1</li>
       <li>내용2-2</li>
-      <li>내용2-3</li>
     </ul>
     <script>
       $(function () {
@@ -31,16 +30,9 @@
           border: "2px dashed #f00",
           "font-size": "20px",
         };
-        // 타입이 같은 요소 선택
-        // $("li:first-of-type").css(style_1);
-        // $("li:last-of-type").css(style_2);
-        // 순서로 선택
-        $("#menu1 li:nth-child(1)").css(style_1)
-        // 홀수 선택
-        $("#menu1 li:nth-child(2n+1)").css(style_2)
-        // 짝수 선택
-        $("#menu1 li:nth-child(2n)").css(style_1)
-        $("#menu2 li:nth-last-child(2)").css(style_2)
+        // 인덱스를 1-3까지 선택 , slice() 마지막 인덱스는 포함하지 않는다.
+        $("#menu1 li").slice(1,3).css(style_1)
+        $("li:only-child").css(style_2)
       });
     </script>
   </body>
