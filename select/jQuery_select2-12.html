@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Array 선택자</title>
+    <title>선택자</title>
     <script src="jquery-1.10.2.min.js"></script>
+    <style>
+      a {
+        color: #333;
+      }
+    </style>
   </head>
   <body>
     <div id="outer_wrap">
-      <h1>is( )</h1>
+      <h1>is( ) 메서드</h1>
       <section id="inner_1">
         <h2>문단 태그 영역</h2>
         <p>내용1</p>
@@ -34,8 +39,9 @@
         console.log(result_2); // false
         const result_3 = $("#chk1").is(":checked");
         console.log(result_3); // true
-        const result_4 = $("chk2").is("checked");
-        console.log(result_4); // false
+        const result_4 =$("#chk2").is(":checked");
+        console.log(result_4);// false
+        
       });
     </script>
   </body>

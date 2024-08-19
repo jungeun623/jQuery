@@ -9,8 +9,8 @@
       #myImage {
         border: 2px solid transparent;
       }
-      #myImage.borde-active {
-        border: 2px solid #333;
+      #myImage.borde-active{
+        border: 2px solid #333 ;
       }
     </style>
   </head>
@@ -19,7 +19,7 @@
     <section id="sec_1">
       <h2>이미지 속성 변경</h2>
       <p>
-        <img id="myImage" src="images/math_img_1.jpg" alt="바위" />
+        <img id="myImage" src="images/math_img_1.jpg" alt="바위"  />
       </p>
       <button id="changeImage">이미지 변경</button>
       <button id="toggleBorder">테두리 토글</button>
@@ -51,7 +51,7 @@
         });
         // 테두리 변경
         $("#toggleBorder").click(function () {
-          $("#myImage").toggleClass("borde-active");
+          $("#myImage").toggleClass("borde-active")
         });
       });
     </script>

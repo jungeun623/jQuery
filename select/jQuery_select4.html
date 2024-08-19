@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>선택자</title>
-    <script src="../jquery-1.10.2.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
   </head>
   <body>
-    <h1>인접 관계 선택자</h1>
     <ul id="wrap">
+      <h1>인접 관계 선택자</h1>
       <li>
         리스트1
         <ul>
@@ -21,8 +21,8 @@
     </ul>
     <script>
       $(function () {
-        $("#list_1 , #wrap").parent().css("border", "2px solid #f00");
-        $("#wrap h1").css("border", "2px solid #f0f");
+        $("#list_1 ,#wrap").parent().css("border" , "2px solid #f00")
+        $("#wrap h1").css("border" , "2px solid #f0f")
       });
     </script>
   </body>

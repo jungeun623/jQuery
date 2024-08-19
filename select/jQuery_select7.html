@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>선택자</title>
-    <script src="../jquery-1.10.2.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
   </head>
   <body>
+    <h1>인접 관계 선택자</h1>
     <div id="wrap">
-      <h1>인접 관계 선택자</h1>
       <p>내용1</p>
       <p class="txt">내용2</p>
       <p>내용3</p>
@@ -20,16 +20,16 @@
         const style_1 = {
           "background-color": "#f0f",
           border: "2px solid #f00",
-          color: "#fff",
+          color:"#fff"
         };
         const style_2 = {
           "background-color": "#ff0",
           border: "2px dashed #f00",
-          "font-size": "30px",
+          "font-size": "20px"
         };
-        // $(".txt").prevAll().css(style_1);
-        // $(".txt").nextAll().css(style_2);
-        $(".txt").siblings().css(style_1)
+      // $(".txt").prevAll().css(style_1)
+      // $(".txt").nextAll().css(style_2)
+      $(".txt").siblings().css(style_1)
       });
     </script>
   </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>탐색 선택자</title>
-    <script src="../select/jquery-1.10.2.min.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
   </head>
   <body>
     <h1>탐색 선택자</h1>
@@ -27,12 +27,15 @@
           // console.log(i);
           // console.log(o);
         });
-        $.each("#menu2 li", function (i, o) {
-          console.log(i);
-          console.log(o);
-          // ========================
-          $.each($("menu2 li"), function (i) {
-            console.log(i, $(this));
+        $.each($("#menu2 li"), function (i, o) {
+          // console.log(i);
+          // console.log(o);
+          // =================
+          $.each($("#menu2 li"), function (i, o) {
+            // console.log(i, o);
+            console.log(i ,$(this));
+            
+
           });
         });
       });

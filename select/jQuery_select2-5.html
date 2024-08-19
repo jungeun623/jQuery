@@ -27,7 +27,8 @@
             name: "빅마마",
           },
         ];
-        //$.map() 메서드는 배열 또는 객체를 변형하여 새로운 배열 또는 객체를 생성하는데 활용(콜백 함수. each랑 비슷한 것)
+        // $.map()메서드는 배열 또는 객체를 변형하여 새로운 배열 또는
+        // 객체를 생성하는데 활용
         // 결과를 새로운 배열로 반환하는 기능
         const arr2 = $.map(arr1, function (a, b) {
           // console.log(a.area);
@@ -36,6 +37,7 @@
             return a;
           }
         });
+
         // console.log(arr2);
         const arr3 = $.grep(arr1, function (a, b) {
           if(a.area == "서울"){
